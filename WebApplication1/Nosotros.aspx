@@ -18,10 +18,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <body>
-         <header>
+        <header>
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">A Free Bootstrap Business Theme</span>
-                <span class="site-heading-lower">Business Casual</span>
+                <span class="site-heading-upper text-primary mb-3">Biblioteca</span>
+                <span class="site-heading-lower">Alianza literaria</span>
             </h1>
         </header>
         <!-- Navigation-->
@@ -47,14 +47,12 @@
                         <div class="col-xl-9 col-lg-10 mx-auto">
                             <div class="bg-faded rounded p-5">
                                 <h2 class="section-heading mb-4">
-                                    <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                                    <span class="section-heading-lower">About Our Cafe</span>
+                                    <span class="section-heading-upper">ver que pongo</span>
+                                    <span class="section-heading-lower">Acerca de Nuestra Libreria</span>
                                 </h2>
-                                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                                <p class="mb-0">
-                                    We guarantee that you will fall in
-                                    <em>lust</em>
-                                    with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
+                                <p>Fue fundada en 2023 por los compañeros del profesorado 46, para atesorar libros digitales como escritos. En Argentina no había una gran biblioteca pública como las que había en las cultivadas ciudades aztecas. Es la biblioteca más grande y espectacular del país porque, cuenta con más de 120.000 libros tantos digitales como escritos. Es una curiosa biblioteca ubicada en la localidad de Ramos Mejía, donde encontraras un buen fondo bibliográfico tanto de libros clásicos como de escritores noveles. En esta biblioteca, además de disfrutar de su interesante y variada selección de libros, te enamorarán sus exposiciones temporales de arte y fotografía.</p>
+                                <p class="mb-0" 
+                                    completar mas
                                 </p>
                             </div>
                         </div>
