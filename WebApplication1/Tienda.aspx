@@ -17,6 +17,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <body>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionToLibrary %>" ProviderName="<%$ ConnectionStrings:ConnectionToLibrary.ProviderName %>" SelectCommand="SELECT TOP (1000) ID_libro, Autor, Ano, Nom_Libro, Editorial, Cantidad, Precio FROM Libreria_Base.dbo.Registro_De_Libros"></asp:SqlDataSource>
         <header>
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
                 <span class="site-heading-upper text-primary mb-3">Biblioteca</span>
@@ -49,31 +50,31 @@
                             </h2>
                             <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                                 <li class="list-unstyled-item list-hours-item d-flex">
-                                    Sunday
+                                    Domingo
                                     <span class="ms-auto">Closed</span>
                                 </li>
                                 <li class="list-unstyled-item list-hours-item d-flex">
-                                    Monday
+                                    Lunes
                                     <span class="ms-auto">7:00 AM to 8:00 PM</span>
                                 </li>
                                 <li class="list-unstyled-item list-hours-item d-flex">
-                                    Tuesday
+                                    Martes
                                     <span class="ms-auto">7:00 AM to 8:00 PM</span>
                                 </li>
                                 <li class="list-unstyled-item list-hours-item d-flex">
-                                    Wednesday
+                                    Miercoles
                                     <span class="ms-auto">7:00 AM to 8:00 PM</span>
                                 </li>
                                 <li class="list-unstyled-item list-hours-item d-flex">
-                                    Thursday
+                                    Jueves
                                     <span class="ms-auto">7:00 AM to 8:00 PM</span>
                                 </li>
                                 <li class="list-unstyled-item list-hours-item d-flex">
-                                    Friday
+                                    Viernes
                                     <span class="ms-auto">7:00 AM to 8:00 PM</span>
                                 </li>
                                 <li class="list-unstyled-item list-hours-item d-flex">
-                                    Saturday
+                                    Sabado
                                     <span class="ms-auto">9:00 AM to 5:00 PM</span>
                                 </li>
                             </ul>
@@ -99,7 +100,19 @@
                 <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/indexmod.jpg" alt="..." />
                 <div class="about-heading-content">
                     <div class="row">
-                        <div class="col-xl-9 col-lg-10 mx-auto">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                            <Columns>
+                                <asp:BoundField DataField="ID_libro" HeaderText="ID_libro" InsertVisible="False" ReadOnly="True" SortExpression="ID_libro" />
+                                <asp:BoundField DataField="Autor" HeaderText="Autor" SortExpression="Autor" />
+                                <asp:BoundField DataField="Ano" HeaderText="Ano" SortExpression="Ano" />
+                                <asp:BoundField DataField="Nom_Libro" HeaderText="Nom_Libro" SortExpression="Nom_Libro" />
+                                <asp:BoundField DataField="Editorial" HeaderText="Editorial" SortExpression="Editorial" />
+                                <asp:BoundField DataField="Cantidad" HeaderText="Cantidad" SortExpression="Cantidad" />
+                                <asp:BoundField DataField="Precio" HeaderText="Precio" SortExpression="Precio" />
+                            </Columns>
+                        </asp:GridView>
+
+                        <%--<div class="col-xl-9 col-lg-10 mx-auto">
                             <div class="bg-faded rounded p-5">
                                 <h2 class="section-heading mb-4">
                                     <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
@@ -113,7 +126,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    --%></div>
                 </div>
             </div>
         </section>
