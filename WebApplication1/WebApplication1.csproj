@@ -140,6 +140,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Nosotros.aspx" />
     <Content Include="Productor.aspx" />
+    <Content Include="sldjas.aspx" />
     <Content Include="Tienda.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -180,6 +181,13 @@
       <DependentUpon>Productor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sldjas.aspx.cs">
+      <DependentUpon>sldjas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sldjas.aspx.designer.cs">
+      <DependentUpon>sldjas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tienda.aspx.cs">
       <DependentUpon>Tienda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
